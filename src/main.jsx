@@ -4,7 +4,7 @@ import {createHashRouter, RouterProvider} from "react-router-dom";
 import {App} from './app.jsx'
 import {Inicio} from './inicio.jsx'
 import {Login} from './login.jsx'
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const router = createHashRouter([
   {

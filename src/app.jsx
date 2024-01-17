@@ -2,7 +2,11 @@
 
 export function App() {
   return (
-    <div>App</div>
+    <div className="container">
+      <div className="row">
+        
+      </div>
+    </div>
   )
 }
 
