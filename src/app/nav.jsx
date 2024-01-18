@@ -2,7 +2,10 @@
 
 export function Nav() {
   return (
-    <div>Nav</div>
+    <>
+      <a className="col-6" target="_blank" href="#/submit">submit</a>
+      <a className="col-6" target="_blank" href="#/login">login</a>
+    </>
   )
 }
 

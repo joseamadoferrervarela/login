@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import {createHashRouter, RouterProvider} from "react-router-dom";
-import {App} from './app.jsx'
-import {Inicio} from './inicio.jsx'
-import {Login} from './login.jsx'
+import {App} from './appl.jsx';
+import {Submit} from './submit.jsx';
+import {Login} from './login.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const router = createHashRouter([
@@ -17,8 +17,8 @@ const router = createHashRouter([
     element:<Login></Login>,
   },
   {
-    path:"/inicio",
-    element:<Inicio></Inicio>,
+    path:"/submit",
+    element:<Submit></Submit>,
   },
 ])
 
