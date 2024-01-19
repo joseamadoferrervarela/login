@@ -1,16 +1,19 @@
 
 
 export function Submit() {
-const [first, setfirst] = useState(second)
 
-
-const saveLocalStorage=()=>{
-   
+const saveLocalStorage= e =>{
+   e.preventDefault();
+   const datos= new FormData(e.target);
+   localStorage.setItem("username", datos.get("username"));
+   localStorage.setItem("contraseña", datos.get("contraseña"));
+   location.href='#/login'
 }
 
   return (
-    <div>
-    <form onSubmit={e=>{}} action="" method="POST">
+    <div >
+    <h3>ingresa tus datos</h3>
+    <form id="formulario" onSubmit={saveLocalStorage} action="" method="POST">
       <input name="username" type="text" />
       <input name="contraseña" type="password" />
       <input type="submit"/>
