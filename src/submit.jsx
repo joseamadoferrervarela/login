@@ -8,12 +8,13 @@ const saveLocalStorage= e =>{
    localStorage.setItem("username", datos.get("username"));
    localStorage.setItem("contraseña", datos.get("contraseña"));
    location.href='#/login'
+   
 }
 
   return (
     <div >
     <h3>ingresa tus datos</h3>
-    <form id="formulario" onSubmit={saveLocalStorage} action="" method="POST">
+    <form id="formulario" onSubmit={saveLocalStorage}>
       <input name="username" type="text" />
       <input name="contraseña" type="password" />
       <input type="submit"/>
