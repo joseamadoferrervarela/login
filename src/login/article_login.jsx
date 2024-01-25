@@ -36,7 +36,7 @@ export function Article_Login() {
             console.log(cursor.result.value)
             if (datos.get("email") == cursor.result.value.email && datos.get("password")== cursor.result.value.password) {
               sessionStorage.setItem("email", datos.get("email"));
-              location.href='#/submit'    
+              location.href='#/'    
             }
             
             cursor.result.continue()

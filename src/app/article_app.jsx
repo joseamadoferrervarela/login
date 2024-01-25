@@ -7,7 +7,7 @@ export function Article_App() {
     return (
     <div>
       <h1>Welcome {user}</h1>
-      <p>You area suscessfully logged In <a href="logout.php">Logout</a></p>
+      <p>You area suscessfully logged In <a href="#/logout">Logout</a></p>
     </div>   
     )
   }else{

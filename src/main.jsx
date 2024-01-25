@@ -6,6 +6,7 @@ import {Submit} from './submit.jsx';
 import {Login} from './login.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
 import  "./index.scss";
+import { Logout } from './logout.jsx';
 
 const router = createHashRouter([
   {
@@ -20,6 +21,10 @@ const router = createHashRouter([
   {
     path:"/submit",
     element:<Submit></Submit>,
+  },
+  {
+    path:"/logout",
+    element:<Logout></Logout>,
   },
 ])
 

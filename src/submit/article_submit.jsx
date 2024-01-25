@@ -10,7 +10,7 @@ export function Article_Submit() {
              autoIncrement:true
           })
         })
-
+        
         IDBRequest.addEventListener("success",()=>{
           console.log("todo salio correctamente");
         })
