@@ -1,11 +1,23 @@
 
 
 export function Article_App() {
-  return (
-    <div className="col-12">
-      <h3>please Login or Singup</h3>
-      <a target="_blank" href="#/submit">submit</a> or {" "}
-       <a  target="_blank" href="#/login">login</a>
-    </div>
-  )
+  const user= sessionStorage.getItem("email");
+  
+  if(user){
+    return (
+    <div>
+      <h1>Welcome {user}</h1>
+      <p>You area suscessfully logged In <a href="logout.php">Logout</a></p>
+    </div>   
+    )
+  }else{
+    return(
+      <div className="col-12">
+        <h3>please Login or Singup</h3>
+        <a href="#/submit">submit</a> or {" "}
+        <a href="#/login">login</a>
+      </div>
+    )
+  }
+  
 }
