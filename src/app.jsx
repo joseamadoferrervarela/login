@@ -1,6 +1,6 @@
 
-import {Nav} from './app/nav.jsx'
-import {Article} from "./app/article.jsx";
+import {Nav} from './all/nav.jsx'
+import {Article_App} from "./app/article_app.jsx";
 
 export function App() {
 
@@ -9,11 +9,11 @@ export function App() {
   }
   return (
     <div className="container">
-      <div className="row border">
+      <div className="row ">
         <Nav/>
       </div>
-      <div className="row border">
-        <Article/>
+      <div className="row">
+        <Article_App/>
       </div>
     </div>
   )

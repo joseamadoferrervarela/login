@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {createHashRouter, RouterProvider} from "react-router-dom";
-import {App} from './appl.jsx';
+import {App} from './app.jsx';
 import {Submit} from './submit.jsx';
 import {Login} from './login.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
+import  "./index.scss";
 
 const router = createHashRouter([
   {
