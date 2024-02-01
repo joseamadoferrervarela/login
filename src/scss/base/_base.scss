@@ -3,6 +3,22 @@
 body{
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    background: 
+    linear-gradient(blue, pink);
+    height: 100vh;
+    color:#fff 
+}
+
+.error{
+    height: 10px;
+   color: rgb(243, 198, 233);
+    
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    color: rgb(248, 176, 216);
 }
 
 input[type="text"], input[type="password"]{
@@ -11,24 +27,27 @@ input[type="text"], input[type="password"]{
     display: block;
     width: 300px;
     height:30px; 
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid #eee;
-    margin:20px auto;
+    margin:0px auto;
     }
     
     input[type="submit"]{
-        padding:10px;
+        padding:5px;
         color: #fff;
-        background-color: #4946fd;
+        background-color: transparent;
+        border:3px solid rgb(35, 241, 231);
         width: 300px;
         margin-top: 0;
-        border: 0;
-        border-radius: 10px;
-        cursor:pointer
+        // border: 0;
+        border-radius: 7px;
+        cursor:pointer;
+        box-sizing: border-box;
+        
         
     }
     
     input[type="submit"]:hover{
-        background-color: #0004eb;
+        border:3px solid rgb(234, 35, 241);
      
     }

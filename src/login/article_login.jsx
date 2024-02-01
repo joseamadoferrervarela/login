@@ -53,10 +53,11 @@ export function Article_Login() {
          <h3>ingresa tus datos para iniciar sesion</h3>
          <form id="formulario" onSubmit={checkLocalStorage}>
            <input name="email" type="text" />
+           <br />
            <input name="password" type="password"/>
+           <br />
            <input type="submit" value="iniciar"/>
-           <br />
-           <br />
+           
            <small>{message}</small>
          </form>
          </div>
